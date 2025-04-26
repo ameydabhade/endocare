@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Container } from "@/components/ui/container"
 
 const footerLinks = [
   {
@@ -30,7 +31,7 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="border-t bg-background">
-      <div className="container py-12 md:py-16">
+      <Container className="py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="font-bold text-xl block mb-4">
@@ -74,7 +75,7 @@ export function Footer() {
             </Link>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   )
 } 

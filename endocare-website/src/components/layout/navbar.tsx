@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Container } from "@/components/ui/container"
 
 const routes = [
   { href: "/why-endocare", label: "Why Endocare?" },
@@ -24,7 +25,7 @@ export function Navbar() {
   
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <Container className="flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="flex items-center space-x-2">
             <span className="font-bold text-xl">Endocare</span>
@@ -74,7 +75,7 @@ export function Navbar() {
           </Sheet>
           <ThemeToggle />
         </div>
-      </div>
+      </Container>
     </header>
   )
 } 
